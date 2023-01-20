@@ -13,8 +13,8 @@ export const JobListItem: FC<IJobListItemProps> = ({
 	...rest
 }) => {
 	const listItemCn = classNames({
-		jobList__item: true,
-		'featured-post': isFeaturedPost,
+		'job-list__item': true,
+		'featured-item ': isFeaturedPost,
 	});
 
 	return (

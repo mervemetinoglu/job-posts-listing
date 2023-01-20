@@ -16,7 +16,7 @@ export interface IJobListProps {
 
 export const JobList: FC<IJobListProps> = ({ data, tagOnClick }) => {
 	return (
-		<ul className="jobList">
+		<ul className="job-list__wrapper">
 			{data.map((post) => (
 				<JobListItem key={post.id} isFeaturedPost={post.featured}>
 					<JobListItemImage src={post.logo} alt={post.company} />

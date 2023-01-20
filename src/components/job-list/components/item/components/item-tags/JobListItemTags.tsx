@@ -21,7 +21,7 @@ export const JobListItemTags: FC<IJobListItemTagsProps> = ({
 	const tagsList = [...new Set<string>([role, level, ...languages, ...tools])];
 
 	return (
-		<div className={`list__item-tags ${className}`} {...rest}>
+		<div className={`job-list__item-tags ${className}`} {...rest}>
 			{tagsList.map((item) => (
 				<button key={item} onClick={() => tagOnClick(item)}>
 					{item}

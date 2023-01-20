@@ -6,9 +6,5 @@ export interface IJobListItemImageProps {
 }
 
 export const JobListItemImage: FC<IJobListItemImageProps> = ({ src, alt }) => {
-	return (
-		<div>
-			<img src={src} alt={alt} className="list__item-img" />
-		</div>
-	);
+	return <img src={src} alt={alt} className="job-list__item-img" />;
 };

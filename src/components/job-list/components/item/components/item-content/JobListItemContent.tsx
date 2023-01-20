@@ -33,19 +33,19 @@ export const JobListItemContent: FC<IJobListItemContentProps> = (props) => {
 	});
 
 	return (
-		<div className="list__item-content">
-			<div className="title">
-				<h4 className="company">{companyName}</h4>
+		<div className="job-list__item-content">
+			<div className="item-title">
+				<h4 className="item-company-name">{companyName}</h4>
 				{isNewPost ? <span className={newPostCn}>NEW!</span> : null}
 				{isFeaturedPost ? (
 					<span className={featuredPostCn}>FEATURED</span>
 				) : null}
 			</div>
-			<div className="body">{positionName}</div>
-			<ul className="footer">
-				<li className="footer__item">{postedAt}</li>
-				<li className="footer__item">{contractType}</li>
-				<li className="footer__item">{location}</li>
+			<div className="item-body">{positionName}</div>
+			<ul className="item-footer">
+				<li>{postedAt}</li>
+				<li>{contractType}</li>
+				<li>{location}</li>
 			</ul>
 		</div>
 	);
