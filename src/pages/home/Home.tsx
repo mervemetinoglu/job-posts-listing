@@ -1,13 +1,15 @@
 import data from '@/data/jobPostings.json';
 import { useEffect, useState } from 'react';
 import { JobPost } from '@/data/models/jobPost.model';
-import { Header, JobList, SearchBar } from '@/components';
+import { Header, JobList, TagsBar } from '@/components';
 
 import '@/styles/pages/_home.scss';
 
 export const Home = () => {
 	const [selectedTags, setSelectedTags] = useState<string[]>([]);
 	const [filteredData, setFilteredData] = useState<JobPost[]>(data);
+
+	const isPlaceholderShown = selectedTags.length === 0;
 
 	const clearTagsBarHandler = () => {
 		setSelectedTags([]);
@@ -40,11 +42,12 @@ export const Home = () => {
 	return (
 		<div>
 			<Header />
-			<div className="container">
-				<SearchBar
+			<div className="home-wrapper">
+				<TagsBar
 					tags={selectedTags}
 					onClickRemove={removeTagHandler}
 					onClickClear={clearTagsBarHandler}
+					isPlaceholderShown={isPlaceholderShown}
 				/>
 				<JobList data={filteredData} tagOnClick={tagOnClick} />
 			</div>
