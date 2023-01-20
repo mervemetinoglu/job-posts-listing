@@ -1,4 +1,4 @@
-import Home from '@/routes/Home';
+import { Home } from '@/pages/home';
 
 function App() {
 	return <Home />;

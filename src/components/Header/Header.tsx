@@ -1,7 +1,5 @@
-import '@/styles/components/_header.scss';
+import './styles/_header.scss';
 
-const Header = () => {
+export const Header = () => {
 	return <div className="header"></div>;
 };
-
-export default Header;

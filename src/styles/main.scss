@@ -1,18 +1,3 @@
-@use 'abstracts' as *;
-@use 'components' as *;
+@use 'base' as *;
 @use 'pages' as *;
-
-html {
-    font-size: $font-size;
-}
-
-body {
-    font-size: 1rem;
-}
-
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+@use 'abstracts' as *;

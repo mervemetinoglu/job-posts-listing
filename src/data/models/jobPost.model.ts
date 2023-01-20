@@ -1,15 +1,15 @@
 export interface JobPost {
 	id: number;
-	company: string;
 	logo: string;
 	new: boolean;
-	featured: boolean;
-	position: string;
 	role: string;
 	level: string;
+	tools: string[];
+	company: string;
 	postedAt: string;
+	position: string;
 	contract: string;
 	location: string;
+	featured: boolean;
 	languages: string[];
-	tools: string[];
 }

@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import '@/styles/components/_jobList.scss';
+import classNames from 'classnames';
 
-interface JobListItemContentProps {
+export interface IJobListItemContentProps {
 	postedAt: string;
 	location: string;
 	isNewPost: boolean;
@@ -11,7 +11,7 @@ interface JobListItemContentProps {
 	isFeaturedPost: boolean;
 }
 
-const JobListItemContent: FC<JobListItemContentProps> = (props) => {
+export const JobListItemContent: FC<IJobListItemContentProps> = (props) => {
 	const {
 		postedAt,
 		location,
@@ -22,13 +22,23 @@ const JobListItemContent: FC<JobListItemContentProps> = (props) => {
 		isFeaturedPost,
 	} = props;
 
+	const newPostCn = classNames({
+		badge: true,
+		'badge-new': isNewPost,
+	});
+
+	const featuredPostCn = classNames({
+		badge: true,
+		'badge-featured': isFeaturedPost,
+	});
+
 	return (
 		<div className="list__item-content">
 			<div className="title">
 				<h4 className="company">{companyName}</h4>
-				{isNewPost ? <span className="tag new-tag">NEW!</span> : null}
+				{isNewPost ? <span className={newPostCn}>NEW!</span> : null}
 				{isFeaturedPost ? (
-					<span className="tag featured-tag">FEATURED</span>
+					<span className={featuredPostCn}>FEATURED</span>
 				) : null}
 			</div>
 			<div className="body">{positionName}</div>
@@ -40,5 +50,3 @@ const JobListItemContent: FC<JobListItemContentProps> = (props) => {
 		</div>
 	);
 };
-
-export default JobListItemContent;

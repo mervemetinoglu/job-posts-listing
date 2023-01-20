@@ -1,2 +1,27 @@
-$font-size: 16px;
-$border-radius: 4px;
+$fs-base: 14px;
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 16px;
+$border-radius-round: 50%;
+
+$black: #000000;
+$white: #ffffff;
+
+$primary-green-light: #7db0b3;
+$primary-green-main: #64babb;
+$primary-green-dark: #4b9b9a;
+
+$secondary-green-light: #effafb;
+$secondary-green-main: #a8c8c6;
+$secondary-green-dark: #629fa0;
+
+$green-light-1: #f1fafb;
+$green-dark-1: #5ea5a3;
+$green-dark-2: #2b3937;
+
+$primary-gray-light: #f2f2f2;
+$primary-gray-main: #b2b3b2;
+$primary-gray-dark: #404443;
+
+$bs-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;

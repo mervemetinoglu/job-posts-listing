@@ -1,10 +1,7 @@
 @use '../abstracts/' as *;
 
-.home-bg {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    // background-color: pink;
-    background-color: $bg-green;
+.container {
+	width: 80rem;
+	margin: 0 auto;
+	position: relative;
 }

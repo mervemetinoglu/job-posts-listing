@@ -9,12 +9,16 @@
 		"preview": "vite preview",
 		"lint": "yarn run lint:ts && yarn run lint:css",
 		"lint:ts": "tsc && yarn run lint:eslint",
-		"lint:eslint": "eslint \"src/**/*.{ts,tsx}\" --cache"
+		"lint:eslint": "eslint \"src/**/*.{ts,tsx}\" --cache",
+		"format": "prettier --write"
 	},
 	"dependencies": {
-		"normalize.css": "^8.0.1",
+		"@types/uuid": "^9.0.0",
+		"classnames": "^2.3.2",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"uuid": "^9.0.0",
+		"vite-plugin-svgr": "^2.4.0"
 	},
 	"devDependencies": {
 		"@types/node-sass": "^4.11.3",
