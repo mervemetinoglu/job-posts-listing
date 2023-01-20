@@ -1,0 +1,7 @@
+$small-width: 480px;
+
+@mixin small {
+	@media (min-width: #{$small-width}) {
+		@content;
+	}
+}

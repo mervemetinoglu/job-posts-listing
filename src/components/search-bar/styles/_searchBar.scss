@@ -1,59 +1,75 @@
 @use '@/styles/abstracts' as *;
 
-.searchBar {
-	top: -7rem;
-	width: 100%;
+.tags-bar__wrapper {
 	display: flex;
+	min-height: 5rem;
 	box-shadow: $bs-1;
-	position: absolute;
 	align-items: center;
-	padding: 1.5rem 3rem;
+	padding: 1rem 1.5rem;
 	background-color: $white;
 	border-radius: $border-radius-sm;
 
-	ul {
-		height: 2rem;
-		display: flex;
-		align-items: center;
+	@include small {
+		height: 5rem;
+		padding: 1.5rem 3rem;
 	}
+}
+
+.tags-bar__placeholder {
+	color: $primary-gray-main;
+}
+
+.tags-bar__container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.tags-list {
+	gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 
 	&__item {
 		border: none;
 		display: flex;
 		font-weight: 600;
-		margin-right: 1rem;
 		color: $primary-green-main;
 		outline-color: $green-light-1;
 		border-radius: $border-radius-sm;
 	}
 }
 
-.tagItem {
-	display: flex;
+.tag-name {
 	padding: 0.5rem;
-	align-items: center;
 	padding-right: 0.8rem;
 	background-color: $green-light-1;
-	// background-color: red;
 }
 
-.removeButton {
+.remove-btn {
 	display: flex;
 	cursor: pointer;
 	align-items: center;
 	padding: 0.3rem 0.5rem;
-	background-color: $green-dark-2;
+	background-color: $primary-green-main;
 	border-top-right-radius: $border-radius-sm;
 	border-bottom-right-radius: $border-radius-sm;
-}
-
-.clearButton {
-	cursor: pointer;
-	font-weight: 600;
-	margin-left: auto;
-	color: $primary-green-main;
 
 	&:hover {
+		background-color: $green-dark-2;
+	}
+}
+
+.clear-btn {
+	border: none;
+	font-weight: 600;
+	margin-left: auto;
+	color: $primary-gray-main;
+	background-color: transparent;
+
+	&:hover {
+		color: $primary-green-main;
 		text-decoration: underline;
 	}
 }
