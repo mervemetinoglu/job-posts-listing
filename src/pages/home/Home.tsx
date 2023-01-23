@@ -16,7 +16,9 @@ export const Home = () => {
 	};
 
 	const tagOnClick = (tag: string) => {
-		setSelectedTags((prev) => [...new Set([...prev, tag])]);
+		setSelectedTags(
+			(prev: string[]) => [...new Set([...prev, tag])] as string[]
+		);
 	};
 
 	const removeTagHandler = (selectedTag: string) => {
