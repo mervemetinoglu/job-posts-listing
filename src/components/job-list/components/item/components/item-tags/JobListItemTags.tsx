@@ -22,7 +22,7 @@ export const JobListItemTags: FC<IJobListItemTagsProps> = ({
 
 	return (
 		<div className={`job-list__item-tags ${className}`} {...rest}>
-			{tagsList.map((item) => (
+			{tagsList.map((item: string) => (
 				<button key={item} onClick={() => tagOnClick(item)}>
 					{item}
 				</button>
