@@ -1,9 +1,11 @@
 import data from '@/data/jobPostings.json';
 import { useEffect, useState } from 'react';
 import { JobPost } from '@/data/models/jobPost.model';
-import { Header, JobList, TagsBar } from '@/components';
 
 import '@/styles/pages/_home.scss';
+import { Header } from '@/components/header';
+import { TagsBar } from '@/components/tags-bar';
+import { JobList } from '@/components/job-list';
 
 export const Home = () => {
 	const [selectedTags, setSelectedTags] = useState<string[]>([]);
