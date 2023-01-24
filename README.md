@@ -2,7 +2,7 @@
 
 I challenged the [Frontend Mentor's project.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
 
-[Demo:star2:](https://ciceksepeti-patika-bootcamp-hw-2.netlify.app/)
+[Demo:star2:](https://jobs-listingapp.vercel.app)
 
 ## How To Use
 
