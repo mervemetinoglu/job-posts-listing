@@ -1,6 +1,6 @@
 # Job Listing & Filtering App
 
-I challenged that the [Frontend Mentor's project.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
+I challenged the [Frontend Mentor's project.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
 
 [Demo:star2:](https://ciceksepeti-patika-bootcamp-hw-2.netlify.app/)
 
