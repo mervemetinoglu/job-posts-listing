@@ -1,10 +1,8 @@
 {
-	"semi": true,
-	"tabWidth": 2,
-	"useTabs": true,
-	"endOfLine": "lf",
-	"singleQuote": true,
-	"indentStyle": "space",
-	"trailingComma": "es5",
-	"bracketSameLine": false
+  "semi": true,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "indentStyle": "space",
+  "trailingComma": "es5",
+  "bracketSameLine": false
 }

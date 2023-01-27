@@ -1,12 +1,12 @@
 @use '@/styles/abstracts' as *;
 
 .header {
-	width: 100%;
-	height: 8rem;
-	background-color: $green-dark-1;
-	background-image: url('../images/bg-header-mobile.svg');
+  width: 100%;
+  height: 8rem;
+  background-color: $green-dark-1;
+  background-image: url('../images/bg-header-mobile.svg');
 
-	@include small {
-		background-image: url('../images/bg-header-desktop.svg');
-	}
+  @include small {
+    background-image: url('../images/bg-header-desktop.svg');
+  }
 }
