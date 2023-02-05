@@ -1,6 +1,6 @@
-# Job Listing & Filtering App
+# Job Posts Listing & Filtering App
 
-I challenged the [Frontend Mentor's project.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
+This project was developed to list and filter job postings. I challenged the [Frontend Mentor's project.](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt)
 
 [Demo:star2:](https://jobs-listingapp.vercel.app)
 
